@@ -33,8 +33,8 @@
 		//Fill in the request parameters with valid values
 		'ShortCode' => ' 174379 ',
 		'ResponseType' => ' Confirmed ',
-		'ConfirmationURL' => 'https://MyMpesa.herokuapp.com/confirmation_url.php',
-		'ValidationURL' => 'https://MyMpesa.herokuapp.com/validation_url.php'
+		'ConfirmationURL' => 'https://mymppesa.herokuapp.com/confirmation_url.php',
+		'ValidationURL' => 'https://mympesa.herokuapp.com/validation_url.php'
 	);
 	
 	$data_string = json_encode($curl_post_data);
