@@ -11,13 +11,13 @@
 	
 	$curl_response = curl_exec($curl);
 	
-	echo"<pre> Access Token" .json_decode($curl_response)->$access_token. "</pre>";
+	echo"<pre> ACCESS_TOKEN" .json_decode($curl_response)->access_token. "</pre>";
 
 	$url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
 	
 	$curl = curl_init();
 	curl_setopt($curl, CURLOPT_URL, $url);
-	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer'.$access_token)); //setting custom header
+	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer ACCESS_TOKEN')); //setting custom header
 	
 	
 	$curl_post_data = array(
