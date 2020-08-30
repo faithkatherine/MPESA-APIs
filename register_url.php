@@ -11,7 +11,7 @@
 	
 	$curl_response = curl_exec($curl);
 	
-	echo"<pre> ACCESS_TOKEN" .json_decode($curl_response)->access_token. "</pre>";
+	echo"<pre> ACCESS_TOKEN" .json_decode($curl_response)->ACCESS_TOKEN. "</pre>";
 
 	$url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
 	
