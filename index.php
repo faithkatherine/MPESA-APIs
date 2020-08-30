@@ -11,6 +11,6 @@
 	
 	$curl_response = curl_exec($curl);
 	
-	echo"<pre> Access Token" .json_decode($curl_response)->access_token. "</pre>";
+	echo"<pre> Access Token" .json_decode($curl_response)->$access_token. "</pre>";
 	
 	?>
