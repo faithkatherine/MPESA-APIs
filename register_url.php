@@ -31,7 +31,8 @@
 	
 	$curl_post_data = array(
 		//Fill in the request parameters with valid values
-		'ShortCode' => ' 60502',
+		'ShortCode' => ' 174379 ',
+		'password' => 'EfmNOp4fWuBnP0H2NROZIL7SFLJM/9NZlOYBhVrHi9dfcodZVEZmLPjm8fDQoEsw7HYvPf2dZQPcSCB9vraInCxW1nAS8nKnEkLPT0/6ThDClqTLnu6ydPB4QPnDRNU1CtcGlKJDjZxMKaS+QRthxwaLaxupYPux038k8EQUBfPLWo1x50cF6jqS5AuH/vIy275Mq+7XzJIJQICHnJd/zSXTxgNvm/Wb+VDBfONSG/A0hQ4YSGNcaxUMNX2pjUvx5se1WKiUAnGGdrdRqDRN58t8EdG87wGJM6gJob6u6aK9BqVUMsTIZRB9Z/cI8WvDWunga8mYNXX3HGOHm3jyug==',
 		'ResponseType' => ' Confirmed ',
 		'ConfirmationURL' => 'https://mymppesa.herokuapp.com/confirmation_url.php',
 		'ValidationURL' => 'https://mympesa.herokuapp.com/validation_url.php'
