@@ -31,7 +31,7 @@
 	
 	$curl_post_data = array(
 		//Fill in the request parameters with valid values
-		'ShortCode' => ' 174379 ',
+		'ShortCode' => ' 60502',
 		'ResponseType' => ' Confirmed ',
 		'ConfirmationURL' => 'https://mymppesa.herokuapp.com/confirmation_url.php',
 		'ValidationURL' => 'https://mympesa.herokuapp.com/validation_url.php'
