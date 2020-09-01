@@ -31,8 +31,8 @@
 	
 	$curl_post_data = array(
 		//Fill in the request parameters with valid values
-		'ShortCode' => ' 600610 ',
-		'ResponseType' => ' Confirmed ',
+		'ShortCode' => '600610',
+		'ResponseType' => 'Confirmed',
 		'ConfirmationURL' => 'https://amazingpayment.herokuapp.com/confirmation_url.php',
 		'ValidationURL' => 'https://amazingpayment.herokuapp.com/validation_url.php'
 	);
