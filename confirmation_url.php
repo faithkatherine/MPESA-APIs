@@ -19,7 +19,7 @@ $jsonMpesaResponse = json_decode($mpesaResponse, true);
 
 $log = fopen($logFile, "a");
 
-fwrite($log, $mpesaResponse);
+fwrite($log, $jsonmpesaResponse);
 fclose($log);
 
 echo $response
