@@ -1,26 +1,22 @@
 <?php
+       header("Content-Type: application/json");
 
-header("Content-Type:application/json");
+       $response = '{
+                     "ResultCode": 0, 
+                     "ResultDesc": "Confirmation Received Successfully"
+       }';
 
-$response = '{  
-       "ResultCode": 0
-       "ResultDesc": "confirmation received successfully"
-}';
+       // DATA
+       $mpesaResponse = file_get_contents('php://input');
 
-//DATA
-$mpesaResponse = file_get_contents('php://input');
+       // log the response
+       $logFile = "M_PESAConfirmationResponse.txt";
 
-//log the response
+       // write to file
+       $log = fopen($logFile, "a");
 
-$logFile = "M_pesaResponse.txt";
-$jsonMpesaResponse = json_decode($mpesaResponse, true);
+       fwrite($log, $mpesaResponse);
+       fclose($log);
 
-// write file
-
-$log = fopen($logFile, "a");
-fwrite($log, $mpesaResponse);
-fclose($log);
-
-echo $response
-
+       echo $response;
 ?>
