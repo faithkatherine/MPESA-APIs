@@ -3,7 +3,7 @@
     
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer Wpx4QLLcrARQx9lF1XofLOoAu1Ql')); //setting custom header
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer 7CLiUARdXeV4S1DRYGo1P53JAGsm')); //setting custom header
     
     
         $curl_post_data = array(
@@ -12,7 +12,7 @@
             'CommandID' => 'CustomerPayBillOnline',
             'Amount' => '527',
             'Msisdn' => '254708374149',
-            'BillRefNumber' => 'SIMULATE001'
+            'BillRefNumber' => 'SIMULATE004'
         );
     
         $data_string = json_encode($curl_post_data);
