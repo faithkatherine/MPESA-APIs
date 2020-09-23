@@ -1,6 +1,6 @@
     <?php
     $url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate';
-        $access_token = 'W4bri5479gktb1XS1goALJlXVxp5';
+    $access_token = '';
     
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
