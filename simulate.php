@@ -3,7 +3,7 @@
     
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer 5lrzg7G4Kpa94SXUgNsqEjCkHRm7')); //setting custom header
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer ictGDDeJM1VnEAQWDdkpPrRQA1eN')); //setting custom header
     
     
         $curl_post_data = array(
