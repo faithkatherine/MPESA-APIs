@@ -1,8 +1,13 @@
 <?php
 function insert_response($jsonMpesaResponse){
 
+        $dbName = 'd622nelie1ofak';
+		$dbHost = 'ec2-34-198-243-120.compute-1.amazonaws.com';
+		$dbUser = 'xmarpbbyomvyjs';
+		$dbPass = 'c6be93fe5fa7ac8c149391b6b67c552b273f4184d5abb6ffee69696295281bb0';
+
     try{
-        $conn = new PDO("mysql:dbhost=localhost; dbname=payments", "root", "" );
+        $conn = new PDO("mysql:dbhost=$dbHost; dbname=$dbName", $dbUser, $dbPass );
         echo "connection was successfull";
     }
 

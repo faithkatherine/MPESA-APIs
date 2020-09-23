@@ -1,10 +1,10 @@
     <?php
+    include('access_token.php');
     $url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate';
-    $access_token = '';
-    
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer'.$access_token)); //setting custom header
+        
+    $curl = curl_init();
+	curl_setopt($curl, CURLOPT_URL, $url);
+	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer ' .$access_token));//setting custom header
     
     
         $curl_post_data = array(
