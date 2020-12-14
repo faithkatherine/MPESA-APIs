@@ -9,10 +9,12 @@
 	
 	$curl_post_data = array(
 		//Fill in the request parameters with valid values
-		'ShortCode' => '600610',
+		'ShortCode' => '603003',
 		'ResponseType' => 'Confirmed',
-		'ConfirmationURL' => 'https://amazingpayment.herokuapp.com/confirmation_url.php',
-		'ValidationURL' => 'https://amazingpayment.herokuapp.com/validation_url.php'
+		/*'ConfirmationURL' => 'https://amazingpayment.herokuapp.com/confirmation_url.php',
+		'ValidationURL' => 'https://amazingpayment.herokuapp.com/validation_url.php'*/
+		'ConfirmationURL' => 'https://38c8690e8299.ngrok.io/MyPaymeny/confirmation_url.php',
+		'ValidationURL' => 'https://38c8690e8299.ngrok.io/MyPayment/validation_url.php'
 	);
 	
 	$data_string = json_encode($curl_post_data);

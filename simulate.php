@@ -9,9 +9,9 @@
     
         $curl_post_data = array(
                 //Fill in the request parameters with valid values
-            'ShortCode' => '600610',
+            'ShortCode' => '603003',
             'CommandID' => 'CustomerPayBillOnline',
-            'Amount' => '527',
+            'Amount' => '300',
             'Msisdn' => '254708374149',
             'BillRefNumber' => 'SIMULATE004'
         );
